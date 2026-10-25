@@ -39,5 +39,3 @@ This project is licensed under the **GNU Affero General Public License v3.0 (AGP
 
 ### Network / SaaS Provision
 If you fork this project, modify it, and run it on a server to provide a network service (like a hosted bot platform or API bridge), **you must make your modified source code available to the users** of that service under the AGPL-3.0.
-
-See the [LICENSE](LICENSE) file for the full text.
