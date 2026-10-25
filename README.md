@@ -24,14 +24,6 @@ cargo check
 # Run tests if any are present
 cargo test
 ```
-
-If you wish to use this code in another Rust project as a Git dependency:
-
-```toml
-[dependencies]
-fluxer-rs = { git = "https://github.com" }
-```
-
 ## ⚖️ License
 
 This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
