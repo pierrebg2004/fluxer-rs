@@ -1,6 +1,5 @@
 # fluxer-rs (Archived / Unmaintained)
 
-License: AGPL3.0
 > [!WARNING]
 > **This project is unmaintained.** This is the early-stage beginning of a Fluxer client/framework rewritten in Rust. I will not continue working on this repository. Feel free to fork it if you want to pick up where I left off.
 
