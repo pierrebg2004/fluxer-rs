@@ -1,0 +1,28 @@
+[package]
+name = "fluxer-core"
+description = "Native Rust client library for the Fluxer platform (HTTP API + realtime gateway)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+tokio-tungstenite.workspace = true
+futures-util.workspace = true
+reqwest.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+chrono.workspace = true
+url.workspace = true
+rusqlite.workspace = true
+tracing.workspace = true
+
+[[example]]
+name = "probe"
+path = "examples/probe.rs"
+
+[dev-dependencies]
+object = { version = "0.40.0", default-features = false, features = ["read", "elf"] }

@@ -1,0 +1,32 @@
+[package]
+name = "fluxer-gui"
+description = "Fluxer-rs — native Rust desktop client (egui)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fluxer"
+path = "src/main.rs"
+
+[dependencies]
+fluxer-core = { path = "../fluxer-core" }
+fluxer-voice = { path = "../fluxer-voice" }
+reqwest.workspace = true
+eframe = { version = "0.37", default-features = false, features = ["wgpu_no_default_features", "wayland", "default_fonts", "system_fonts", "links"] }
+# Backend Vulkan uniquement : on n'active ni GLES/OpenGL, ni Metal/DX12.
+wgpu = { version = "30", default-features = false, features = ["std", "vulkan", "wgsl"] }
+# Wayland avec chargement dynamique de libwayland (aucun pkg-config requis).
+winit = { version = "0.30", default-features = false, features = ["wayland", "wayland-dlopen", "rwh_06"] }
+egui = "0.37"
+egui_extras = { version = "0.37", features = ["http", "image", "webp", "gif"] }
+tokio.workspace = true
+tokio-util.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+image = { version = "0.25", default-features = false, features = ["png"] }
+chrono.workspace = true
+rustls.workspace = true
